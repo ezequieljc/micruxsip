@@ -48,6 +48,12 @@ Não precisa de nenhuma biblioteca SIP externa; a pilha SIP/RTP vem junto.
 ### Jeito rápido
 
 ```sh
+curl -fsSL https://raw.githubusercontent.com/ezequieljc/micruxsip/main/install.sh | sh
+```
+
+Se não tiver o `curl`, instale com `sudo apt install curl` ou use o `wget`:
+
+```sh
 wget -qO- https://raw.githubusercontent.com/ezequieljc/micruxsip/main/install.sh | sh
 ```
 
@@ -57,7 +63,7 @@ wget -qO- https://raw.githubusercontent.com/ezequieljc/micruxsip/main/install.sh
 sudo apt install git
 git clone https://github.com/ezequieljc/micruxsip.git
 cd micruxsip
-./install.sh
+sh install.sh
 ```
 
 O instalador:
@@ -162,8 +168,8 @@ para fixar outra porta em Configurações.
 ## Desinstalar
 
 ```sh
-~/.local/share/micruxsip/uninstall.sh          # mantém contas e histórico
-~/.local/share/micruxsip/uninstall.sh --purge  # apaga tudo
+sh ~/.local/share/micruxsip/uninstall.sh          # mantém contas e histórico
+sh ~/.local/share/micruxsip/uninstall.sh --purge  # apaga tudo
 ```
 
 ## Testes

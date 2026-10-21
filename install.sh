@@ -1,11 +1,11 @@
 #!/bin/sh
 # Instala o MicruxSip para o usuário atual (sem precisar de root, exceto para as dependências).
 #
-#   ./install.sh            instala dependências + programa
-#   ./install.sh --no-deps  só copia o programa
+#   sh install.sh            instala dependências + programa
+#   sh install.sh --no-deps  só copia o programa
 #
 # Também funciona direto da internet:
-#   wget -qO- https://raw.githubusercontent.com/ezequieljc/micruxsip/main/install.sh | sh
+#   curl -fsSL https://raw.githubusercontent.com/ezequieljc/micruxsip/main/install.sh | sh
 set -e
 
 REPO="ezequieljc/micruxsip"
